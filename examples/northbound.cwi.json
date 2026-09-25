@@ -1,0 +1,2404 @@
+{
+  "version": 1,
+  "title": "Northbound",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "baselinePercent": 4.05,
+  "leadIn": 0.55,
+  "hold": 0.32,
+  "syncStyle": "within-word",
+  "popEnabled": true,
+  "boxOpacity": 1,
+  "soundColor": "#B7C6D4",
+  "musicColor": "#E4C98A",
+  "fontPostScript": "RobotoFlex-Regular",
+  "characters": [
+    {
+      "id": "mara",
+      "name": "Mara Ellison",
+      "role": "main",
+      "color": "#E5E517",
+      "baseVolume": 48,
+      "basePitch": 54,
+      "hero": true,
+      "villain": false
+    },
+    {
+      "id": "jonah",
+      "name": "Jonah Pike",
+      "role": "main",
+      "color": "#17E5E5",
+      "baseVolume": 55,
+      "basePitch": 26,
+      "hero": false,
+      "villain": true
+    },
+    {
+      "id": "inez",
+      "name": "Inez",
+      "role": "supporting",
+      "color": "#D4B75E",
+      "baseVolume": 50,
+      "basePitch": 70,
+      "hero": false,
+      "villain": false
+    },
+    {
+      "id": "pa",
+      "name": "Station",
+      "role": "minor",
+      "color": "#BBCFDD",
+      "baseVolume": 36,
+      "basePitch": 78,
+      "hero": false,
+      "villain": false
+    }
+  ],
+  "cues": [
+    {
+      "id": "c1",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "text": "You said the last train already left.",
+      "speechStart": 0.7,
+      "speechEnd": 3.15,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "You",
+          "start": 0.7,
+          "end": 0.9,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "said",
+          "start": 0.9,
+          "end": 1.3,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "the",
+          "start": 1.3,
+          "end": 1.5,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "last",
+          "start": 1.5,
+          "end": 1.8,
+          "volume": 64,
+          "pitch": 50
+        },
+        {
+          "t": "train",
+          "start": 1.8,
+          "end": 2.3,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "already",
+          "start": 2.3,
+          "end": 2.8,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "left.",
+          "start": 2.8,
+          "end": 3.2,
+          "volume": 60,
+          "pitch": 48
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "text": "I said it was leaving. Not that we were on it.",
+      "speechStart": 3.35,
+      "speechEnd": 6.35,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "I",
+          "start": 3.4,
+          "end": 3.4,
+          "volume": 55,
+          "pitch": 26
+        },
+        {
+          "t": "said",
+          "start": 3.4,
+          "end": 3.8,
+          "volume": 55,
+          "pitch": 26
+        },
+        {
+          "t": "it",
+          "start": 3.8,
+          "end": 4,
+          "volume": 36,
+          "pitch": 20
+        },
+        {
+          "t": "was",
+          "start": 4,
+          "end": 4.2,
+          "volume": 55,
+          "pitch": 26
+        },
+        {
+          "t": "leaving.",
+          "start": 4.2,
+          "end": 4.9,
+          "volume": 48,
+          "pitch": 38
+        },
+        {
+          "t": "Not",
+          "start": 4.9,
+          "end": 5.1,
+          "volume": 74,
+          "pitch": 24
+        },
+        {
+          "t": "that",
+          "start": 5.1,
+          "end": 5.5,
+          "volume": 55,
+          "pitch": 26
+        },
+        {
+          "t": "we",
+          "start": 5.5,
+          "end": 5.6,
+          "volume": 55,
+          "pitch": 26
+        },
+        {
+          "t": "were",
+          "start": 5.6,
+          "end": 6,
+          "volume": 55,
+          "pitch": 26
+        },
+        {
+          "t": "on",
+          "start": 6,
+          "end": 6.2,
+          "volume": 40,
+          "pitch": 22
+        },
+        {
+          "t": "it.",
+          "start": 6.2,
+          "end": 6.4,
+          "volume": 36,
+          "pitch": 20
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "text": "Then why is the platform still this loud?",
+      "speechStart": 6.55,
+      "speechEnd": 9.15,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Then",
+          "start": 6.6,
+          "end": 6.9,
+          "volume": 22,
+          "pitch": 60
+        },
+        {
+          "t": "why",
+          "start": 6.9,
+          "end": 7.1,
+          "volume": 24,
+          "pitch": 62
+        },
+        {
+          "t": "is",
+          "start": 7.1,
+          "end": 7.3,
+          "volume": 22,
+          "pitch": 60
+        },
+        {
+          "t": "the",
+          "start": 7.3,
+          "end": 7.5,
+          "volume": 20,
+          "pitch": 58
+        },
+        {
+          "t": "platform",
+          "start": 7.5,
+          "end": 8.1,
+          "volume": 26,
+          "pitch": 56
+        },
+        {
+          "t": "still",
+          "start": 8.1,
+          "end": 8.5,
+          "volume": 28,
+          "pitch": 54
+        },
+        {
+          "t": "this",
+          "start": 8.5,
+          "end": 8.8,
+          "volume": 30,
+          "pitch": 52
+        },
+        {
+          "t": "loud?",
+          "start": 8.8,
+          "end": 9.1,
+          "volume": 78,
+          "pitch": 46
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "text": "Because everyone else made the train.",
+      "speechStart": 9.4,
+      "speechEnd": 12.05,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Because",
+          "start": 9.4,
+          "end": 10,
+          "volume": 46,
+          "pitch": 28
+        },
+        {
+          "t": "everyone",
+          "start": 10,
+          "end": 10.7,
+          "volume": 54,
+          "pitch": 28
+        },
+        {
+          "t": "else",
+          "start": 10.7,
+          "end": 11,
+          "volume": 62,
+          "pitch": 26
+        },
+        {
+          "t": "made",
+          "start": 11,
+          "end": 11.4,
+          "volume": 70,
+          "pitch": 24
+        },
+        {
+          "t": "the",
+          "start": 11.4,
+          "end": 11.6,
+          "volume": 74,
+          "pitch": 24
+        },
+        {
+          "t": "train.",
+          "start": 11.6,
+          "end": 12,
+          "volume": 82,
+          "pitch": 22
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "dialogue",
+      "speakerId": "inez",
+      "text": "Two tickets. If you still want them.",
+      "speechStart": 12.3,
+      "speechEnd": 14.55,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Two",
+          "start": 12.3,
+          "end": 12.5,
+          "volume": 56,
+          "pitch": 72
+        },
+        {
+          "t": "tickets.",
+          "start": 12.5,
+          "end": 13.1,
+          "volume": 52,
+          "pitch": 68
+        },
+        {
+          "t": "If",
+          "start": 13.1,
+          "end": 13.3,
+          "volume": 50,
+          "pitch": 70
+        },
+        {
+          "t": "you",
+          "start": 13.3,
+          "end": 13.5,
+          "volume": 50,
+          "pitch": 70
+        },
+        {
+          "t": "still",
+          "start": 13.5,
+          "end": 13.9,
+          "volume": 50,
+          "pitch": 70
+        },
+        {
+          "t": "want",
+          "start": 13.9,
+          "end": 14.2,
+          "volume": 50,
+          "pitch": 70
+        },
+        {
+          "t": "them.",
+          "start": 14.2,
+          "end": 14.6,
+          "volume": 50,
+          "pitch": 70
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "dialogue",
+      "speakerId": "pa",
+      "text": "Final call for the northbound express.",
+      "speechStart": 14.8,
+      "speechEnd": 17.55,
+      "position": "top",
+      "offscreen": true,
+      "words": [
+        {
+          "t": "Final",
+          "start": 14.8,
+          "end": 15.2,
+          "volume": 40,
+          "pitch": 80
+        },
+        {
+          "t": "call",
+          "start": 15.2,
+          "end": 15.6,
+          "volume": 38,
+          "pitch": 78
+        },
+        {
+          "t": "for",
+          "start": 15.6,
+          "end": 15.8,
+          "volume": 36,
+          "pitch": 78
+        },
+        {
+          "t": "the",
+          "start": 15.8,
+          "end": 16.1,
+          "volume": 36,
+          "pitch": 78
+        },
+        {
+          "t": "northbound",
+          "start": 16.1,
+          "end": 16.9,
+          "volume": 42,
+          "pitch": 74,
+          "syllables": "north|bound"
+        },
+        {
+          "t": "express.",
+          "start": 16.9,
+          "end": 17.6,
+          "volume": 34,
+          "pitch": 82
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "text": "We are getting on that train.",
+      "speechStart": 17.8,
+      "speechEnd": 19.85,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "We",
+          "start": 17.8,
+          "end": 18,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "are",
+          "start": 18,
+          "end": 18.2,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "getting",
+          "start": 18.2,
+          "end": 18.9,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "on",
+          "start": 18.9,
+          "end": 19,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "that",
+          "start": 19,
+          "end": 19.4,
+          "volume": 70,
+          "pitch": 48
+        },
+        {
+          "t": "train.",
+          "start": 19.4,
+          "end": 19.9,
+          "volume": 84,
+          "pitch": 44
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "text": "Not if I say we stay.",
+      "speechStart": 20.05,
+      "speechEnd": 22.15,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Not",
+          "start": 20.1,
+          "end": 20.5,
+          "volume": 30,
+          "pitch": 20
+        },
+        {
+          "t": "if",
+          "start": 20.5,
+          "end": 20.8,
+          "volume": 26,
+          "pitch": 22
+        },
+        {
+          "t": "I",
+          "start": 20.8,
+          "end": 20.9,
+          "volume": 24,
+          "pitch": 20
+        },
+        {
+          "t": "say",
+          "start": 20.9,
+          "end": 21.3,
+          "volume": 28,
+          "pitch": 18
+        },
+        {
+          "t": "we",
+          "start": 21.3,
+          "end": 21.6,
+          "volume": 26,
+          "pitch": 20
+        },
+        {
+          "t": "stay.",
+          "start": 21.6,
+          "end": 22.2,
+          "volume": 34,
+          "pitch": 16
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "sound",
+      "speakerId": null,
+      "text": "brakes hiss, long and low",
+      "speechStart": 22.4,
+      "speechEnd": 24.15,
+      "position": "top",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "[brakes",
+          "start": 22.4,
+          "end": 22.9,
+          "volume": 76,
+          "pitch": 30
+        },
+        {
+          "t": "hiss,",
+          "start": 22.9,
+          "end": 23.3,
+          "volume": 58,
+          "pitch": 46
+        },
+        {
+          "t": "long",
+          "start": 23.3,
+          "end": 23.6,
+          "volume": 48,
+          "pitch": 28
+        },
+        {
+          "t": "and",
+          "start": 23.6,
+          "end": 23.9,
+          "volume": 40,
+          "pitch": 32
+        },
+        {
+          "t": "low]",
+          "start": 23.9,
+          "end": 24.2,
+          "volume": 70,
+          "pitch": 14
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "music",
+      "speakerId": null,
+      "text": "low strings, uneasy",
+      "speechStart": 24.3,
+      "speechEnd": 27.6,
+      "position": "upper",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "♪",
+          "start": 24.3,
+          "end": 24.5,
+          "volume": 48,
+          "pitch": 54
+        },
+        {
+          "t": "[low",
+          "start": 24.5,
+          "end": 25.1,
+          "volume": 44,
+          "pitch": 12
+        },
+        {
+          "t": "strings,",
+          "start": 25.1,
+          "end": 26.4,
+          "volume": 48,
+          "pitch": 16
+        },
+        {
+          "t": "uneasy]",
+          "start": 26.4,
+          "end": 27.6,
+          "volume": 36,
+          "pitch": 34
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "text": "Jonah.",
+      "speechStart": 27.85,
+      "speechEnd": 28.55,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Jonah.",
+          "start": 27.9,
+          "end": 28.6,
+          "volume": 92,
+          "pitch": 42
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "text": "Mara.",
+      "speechStart": 28.7,
+      "speechEnd": 29.35,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Mara.",
+          "start": 28.7,
+          "end": 29.4,
+          "volume": 40,
+          "pitch": 24
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "text": "Don't.",
+      "speechStart": 29.5,
+      "speechEnd": 30.15,
+      "position": "bottom",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "Don't.",
+          "start": 29.5,
+          "end": 30.2,
+          "volume": 86,
+          "pitch": 40
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "lyric",
+      "speakerId": "mara",
+      "text": "hold on, hold on",
+      "speechStart": 30.5,
+      "speechEnd": 33.1,
+      "position": "lower",
+      "offscreen": false,
+      "words": [
+        {
+          "t": "♪",
+          "start": 30.5,
+          "end": 30.7,
+          "volume": 34,
+          "pitch": 64
+        },
+        {
+          "t": "hold",
+          "start": 30.7,
+          "end": 31.5,
+          "volume": 30,
+          "pitch": 68
+        },
+        {
+          "t": "on,",
+          "start": 31.5,
+          "end": 31.9,
+          "volume": 34,
+          "pitch": 64
+        },
+        {
+          "t": "hold",
+          "start": 31.9,
+          "end": 32.7,
+          "volume": 30,
+          "pitch": 68
+        },
+        {
+          "t": "on",
+          "start": 32.7,
+          "end": 33.1,
+          "volume": 34,
+          "pitch": 64
+        }
+      ]
+    }
+  ],
+  "duration": 33.8,
+  "baselinePx": 43.7,
+  "resolvedCues": [
+    {
+      "id": "c1",
+      "label": "Mara Ellison — You said the last train alre",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "speaker": "Mara Ellison",
+      "color": "#E5E517",
+      "text": "You said the last train already left.",
+      "speechStart": 0.7,
+      "speechEnd": 3.15,
+      "displayIn": 0.1499999999999999,
+      "displayOut": 3.4699999999999998,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "You",
+          "start": 0.7,
+          "end": 0.9,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "You"
+        },
+        {
+          "text": "said",
+          "start": 0.9,
+          "end": 1.3,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "said"
+        },
+        {
+          "text": "the",
+          "start": 1.3,
+          "end": 1.5,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "the"
+        },
+        {
+          "text": "last",
+          "start": 1.5,
+          "end": 1.8,
+          "glue": false,
+          "style": {
+            "fontSize": 48.9,
+            "weight": 520,
+            "width": 105,
+            "slant": 0,
+            "opsz": 49,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 64,
+            "pitch": 50
+          },
+          "source": "last"
+        },
+        {
+          "text": "train",
+          "start": 1.8,
+          "end": 2.3,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "train"
+        },
+        {
+          "text": "already",
+          "start": 2.3,
+          "end": 2.8,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "already"
+        },
+        {
+          "text": "left.",
+          "start": 2.8,
+          "end": 3.2,
+          "glue": false,
+          "style": {
+            "fontSize": 47.4,
+            "weight": 530,
+            "width": 106,
+            "slant": 0,
+            "opsz": 47,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 60,
+            "pitch": 48
+          },
+          "source": "left."
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 7.5
+    },
+    {
+      "id": "c2",
+      "label": "Jonah Pike — I said it was leaving. Not t",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "speaker": "Jonah Pike",
+      "color": "#17E5E5",
+      "text": "I said it was leaving. Not that we were on it.",
+      "speechStart": 3.35,
+      "speechEnd": 6.35,
+      "displayIn": 2.8,
+      "displayOut": 6.67,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "I",
+          "start": 3.4,
+          "end": 3.4,
+          "glue": false,
+          "style": {
+            "fontSize": 45.6,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 55,
+            "pitch": 26
+          },
+          "source": "I"
+        },
+        {
+          "text": "said",
+          "start": 3.4,
+          "end": 3.8,
+          "glue": false,
+          "style": {
+            "fontSize": 45.6,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 55,
+            "pitch": 26
+          },
+          "source": "said"
+        },
+        {
+          "text": "it",
+          "start": 3.8,
+          "end": 4,
+          "glue": false,
+          "style": {
+            "fontSize": 40.1,
+            "weight": 676,
+            "width": 121,
+            "slant": 0,
+            "opsz": 40,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 36,
+            "pitch": 20
+          },
+          "source": "it"
+        },
+        {
+          "text": "was",
+          "start": 4,
+          "end": 4.2,
+          "glue": false,
+          "style": {
+            "fontSize": 45.6,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 55,
+            "pitch": 26
+          },
+          "source": "was"
+        },
+        {
+          "text": "leaving.",
+          "start": 4.2,
+          "end": 4.9,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 582,
+            "width": 111,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 38
+          },
+          "source": "leaving."
+        },
+        {
+          "text": "Not",
+          "start": 4.9,
+          "end": 5.1,
+          "glue": false,
+          "style": {
+            "fontSize": 52.6,
+            "weight": 655,
+            "width": 119,
+            "slant": 0,
+            "opsz": 53,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 74,
+            "pitch": 24
+          },
+          "source": "Not"
+        },
+        {
+          "text": "that",
+          "start": 5.1,
+          "end": 5.5,
+          "glue": false,
+          "style": {
+            "fontSize": 45.6,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 55,
+            "pitch": 26
+          },
+          "source": "that"
+        },
+        {
+          "text": "we",
+          "start": 5.5,
+          "end": 5.6,
+          "glue": false,
+          "style": {
+            "fontSize": 45.6,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 55,
+            "pitch": 26
+          },
+          "source": "we"
+        },
+        {
+          "text": "were",
+          "start": 5.6,
+          "end": 6,
+          "glue": false,
+          "style": {
+            "fontSize": 45.6,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 55,
+            "pitch": 26
+          },
+          "source": "were"
+        },
+        {
+          "text": "on",
+          "start": 6,
+          "end": 6.2,
+          "glue": false,
+          "style": {
+            "fontSize": 41.1,
+            "weight": 666,
+            "width": 120,
+            "slant": 0,
+            "opsz": 41,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 40,
+            "pitch": 22
+          },
+          "source": "on"
+        },
+        {
+          "text": "it.",
+          "start": 6.2,
+          "end": 6.4,
+          "glue": false,
+          "style": {
+            "fontSize": 40.1,
+            "weight": 676,
+            "width": 121,
+            "slant": 0,
+            "opsz": 40,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 36,
+            "pitch": 20
+          },
+          "source": "it."
+        }
+      ],
+      "slot": 1,
+      "edge": "bottom",
+      "pct": 16
+    },
+    {
+      "id": "c3",
+      "label": "Mara Ellison — Then why is the platform sti",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "speaker": "Mara Ellison",
+      "color": "#E5E517",
+      "text": "Then why is the platform still this loud?",
+      "speechStart": 6.55,
+      "speechEnd": 9.15,
+      "displayIn": 6,
+      "displayOut": 9.47,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Then",
+          "start": 6.6,
+          "end": 6.9,
+          "glue": false,
+          "style": {
+            "fontSize": 36.4,
+            "weight": 468,
+            "width": 100,
+            "slant": 0,
+            "opsz": 36,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 22,
+            "pitch": 60
+          },
+          "source": "Then"
+        },
+        {
+          "text": "why",
+          "start": 6.9,
+          "end": 7.1,
+          "glue": false,
+          "style": {
+            "fontSize": 36.9,
+            "weight": 458,
+            "width": 99,
+            "slant": 0,
+            "opsz": 37,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 24,
+            "pitch": 62
+          },
+          "source": "why"
+        },
+        {
+          "text": "is",
+          "start": 7.1,
+          "end": 7.3,
+          "glue": false,
+          "style": {
+            "fontSize": 36.4,
+            "weight": 468,
+            "width": 100,
+            "slant": 0,
+            "opsz": 36,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 22,
+            "pitch": 60
+          },
+          "source": "is"
+        },
+        {
+          "text": "the",
+          "start": 7.3,
+          "end": 7.5,
+          "glue": false,
+          "style": {
+            "fontSize": 35.9,
+            "weight": 478,
+            "width": 101,
+            "slant": 0,
+            "opsz": 36,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 20,
+            "pitch": 58
+          },
+          "source": "the"
+        },
+        {
+          "text": "platform",
+          "start": 7.5,
+          "end": 8.1,
+          "glue": false,
+          "style": {
+            "fontSize": 37.4,
+            "weight": 489,
+            "width": 102,
+            "slant": 0,
+            "opsz": 37,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 26,
+            "pitch": 56
+          },
+          "source": "platform"
+        },
+        {
+          "text": "still",
+          "start": 8.1,
+          "end": 8.5,
+          "glue": false,
+          "style": {
+            "fontSize": 38,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 38,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 28,
+            "pitch": 54
+          },
+          "source": "still"
+        },
+        {
+          "text": "this",
+          "start": 8.5,
+          "end": 8.8,
+          "glue": false,
+          "style": {
+            "fontSize": 38.5,
+            "weight": 510,
+            "width": 104,
+            "slant": 0,
+            "opsz": 39,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 30,
+            "pitch": 52
+          },
+          "source": "this"
+        },
+        {
+          "text": "loud?",
+          "start": 8.8,
+          "end": 9.1,
+          "glue": false,
+          "style": {
+            "fontSize": 54,
+            "weight": 541,
+            "width": 107,
+            "slant": 0,
+            "opsz": 54,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 78,
+            "pitch": 46
+          },
+          "source": "loud?"
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 7.5
+    },
+    {
+      "id": "c4",
+      "label": "Jonah Pike — Because everyone else made t",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "speaker": "Jonah Pike",
+      "color": "#17E5E5",
+      "text": "Because everyone else made the train.",
+      "speechStart": 9.4,
+      "speechEnd": 12.05,
+      "displayIn": 8.85,
+      "displayOut": 12.370000000000001,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Because",
+          "start": 9.4,
+          "end": 10,
+          "glue": false,
+          "style": {
+            "fontSize": 42.7,
+            "weight": 634,
+            "width": 117,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 46,
+            "pitch": 28
+          },
+          "source": "Because"
+        },
+        {
+          "text": "everyone",
+          "start": 10,
+          "end": 10.7,
+          "glue": false,
+          "style": {
+            "fontSize": 45.2,
+            "weight": 634,
+            "width": 117,
+            "slant": 0,
+            "opsz": 45,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 54,
+            "pitch": 28
+          },
+          "source": "everyone"
+        },
+        {
+          "text": "else",
+          "start": 10.7,
+          "end": 11,
+          "glue": false,
+          "style": {
+            "fontSize": 48.1,
+            "weight": 645,
+            "width": 118,
+            "slant": 0,
+            "opsz": 48,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 62,
+            "pitch": 26
+          },
+          "source": "else"
+        },
+        {
+          "text": "made",
+          "start": 11,
+          "end": 11.4,
+          "glue": false,
+          "style": {
+            "fontSize": 51.1,
+            "weight": 655,
+            "width": 119,
+            "slant": 0,
+            "opsz": 51,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 70,
+            "pitch": 24
+          },
+          "source": "made"
+        },
+        {
+          "text": "the",
+          "start": 11.4,
+          "end": 11.6,
+          "glue": false,
+          "style": {
+            "fontSize": 52.6,
+            "weight": 655,
+            "width": 119,
+            "slant": 0,
+            "opsz": 53,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 74,
+            "pitch": 24
+          },
+          "source": "the"
+        },
+        {
+          "text": "train.",
+          "start": 11.6,
+          "end": 12,
+          "glue": false,
+          "style": {
+            "fontSize": 55.5,
+            "weight": 666,
+            "width": 120,
+            "slant": 0,
+            "opsz": 56,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 82,
+            "pitch": 22
+          },
+          "source": "train."
+        }
+      ],
+      "slot": 1,
+      "edge": "bottom",
+      "pct": 16
+    },
+    {
+      "id": "c5",
+      "label": "Inez — Two tickets. If you still wa",
+      "type": "dialogue",
+      "speakerId": "inez",
+      "speaker": "Inez",
+      "color": "#D4B75E",
+      "text": "Two tickets. If you still want them.",
+      "speechStart": 12.3,
+      "speechEnd": 14.55,
+      "displayIn": 11.75,
+      "displayOut": 14.870000000000001,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Two",
+          "start": 12.3,
+          "end": 12.5,
+          "glue": false,
+          "style": {
+            "fontSize": 45.9,
+            "weight": 406,
+            "width": 93,
+            "slant": 0,
+            "opsz": 46,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 56,
+            "pitch": 72
+          },
+          "source": "Two"
+        },
+        {
+          "text": "tickets.",
+          "start": 12.5,
+          "end": 13.1,
+          "glue": false,
+          "style": {
+            "fontSize": 44.5,
+            "weight": 426,
+            "width": 95,
+            "slant": 0,
+            "opsz": 45,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 52,
+            "pitch": 68
+          },
+          "source": "tickets."
+        },
+        {
+          "text": "If",
+          "start": 13.1,
+          "end": 13.3,
+          "glue": false,
+          "style": {
+            "fontSize": 43.7,
+            "weight": 416,
+            "width": 94,
+            "slant": 0,
+            "opsz": 44,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 50,
+            "pitch": 70
+          },
+          "source": "If"
+        },
+        {
+          "text": "you",
+          "start": 13.3,
+          "end": 13.5,
+          "glue": false,
+          "style": {
+            "fontSize": 43.7,
+            "weight": 416,
+            "width": 94,
+            "slant": 0,
+            "opsz": 44,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 50,
+            "pitch": 70
+          },
+          "source": "you"
+        },
+        {
+          "text": "still",
+          "start": 13.5,
+          "end": 13.9,
+          "glue": false,
+          "style": {
+            "fontSize": 43.7,
+            "weight": 416,
+            "width": 94,
+            "slant": 0,
+            "opsz": 44,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 50,
+            "pitch": 70
+          },
+          "source": "still"
+        },
+        {
+          "text": "want",
+          "start": 13.9,
+          "end": 14.2,
+          "glue": false,
+          "style": {
+            "fontSize": 43.7,
+            "weight": 416,
+            "width": 94,
+            "slant": 0,
+            "opsz": 44,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 50,
+            "pitch": 70
+          },
+          "source": "want"
+        },
+        {
+          "text": "them.",
+          "start": 14.2,
+          "end": 14.6,
+          "glue": false,
+          "style": {
+            "fontSize": 43.7,
+            "weight": 416,
+            "width": 94,
+            "slant": 0,
+            "opsz": 44,
+            "color": "#D4B75E",
+            "pop": 1.15,
+            "volume": 50,
+            "pitch": 70
+          },
+          "source": "them."
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 7.5
+    },
+    {
+      "id": "c6",
+      "label": "Station — Final call for the northboun",
+      "type": "dialogue",
+      "speakerId": "pa",
+      "speaker": "Station",
+      "color": "#BBCFDD",
+      "text": "Final call for the northbound express.",
+      "speechStart": 14.8,
+      "speechEnd": 17.55,
+      "displayIn": 14.25,
+      "displayOut": 17.87,
+      "position": "top",
+      "offscreen": true,
+      "tokens": [
+        {
+          "text": "Final",
+          "start": 14.8,
+          "end": 15.2,
+          "glue": false,
+          "style": {
+            "fontSize": 41.1,
+            "weight": 364,
+            "width": 89,
+            "slant": -8,
+            "opsz": 41,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 40,
+            "pitch": 80
+          },
+          "source": "Final"
+        },
+        {
+          "text": "call",
+          "start": 15.2,
+          "end": 15.6,
+          "glue": false,
+          "style": {
+            "fontSize": 40.6,
+            "weight": 374,
+            "width": 90,
+            "slant": -8,
+            "opsz": 41,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 38,
+            "pitch": 78
+          },
+          "source": "call"
+        },
+        {
+          "text": "for",
+          "start": 15.6,
+          "end": 15.8,
+          "glue": false,
+          "style": {
+            "fontSize": 40.1,
+            "weight": 374,
+            "width": 90,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 36,
+            "pitch": 78
+          },
+          "source": "for"
+        },
+        {
+          "text": "the",
+          "start": 15.8,
+          "end": 16.1,
+          "glue": false,
+          "style": {
+            "fontSize": 40.1,
+            "weight": 374,
+            "width": 90,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 36,
+            "pitch": 78
+          },
+          "source": "the"
+        },
+        {
+          "text": "north",
+          "start": 16.1,
+          "end": 16.5,
+          "glue": false,
+          "style": {
+            "fontSize": 41.6,
+            "weight": 395,
+            "width": 92,
+            "slant": -8,
+            "opsz": 42,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 42,
+            "pitch": 74
+          },
+          "source": "northbound"
+        },
+        {
+          "text": "bound",
+          "start": 16.5,
+          "end": 16.9,
+          "glue": true,
+          "style": {
+            "fontSize": 41.6,
+            "weight": 395,
+            "width": 92,
+            "slant": -8,
+            "opsz": 42,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 42,
+            "pitch": 74
+          },
+          "source": "northbound"
+        },
+        {
+          "text": "express.",
+          "start": 16.9,
+          "end": 17.6,
+          "glue": false,
+          "style": {
+            "fontSize": 39.5,
+            "weight": 354,
+            "width": 88,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#BBCFDD",
+            "pop": 1.15,
+            "volume": 34,
+            "pitch": 82
+          },
+          "source": "express."
+        }
+      ],
+      "slot": 0,
+      "edge": "top",
+      "pct": 7.5
+    },
+    {
+      "id": "c7",
+      "label": "Mara Ellison — We are getting on that train",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "speaker": "Mara Ellison",
+      "color": "#E5E517",
+      "text": "We are getting on that train.",
+      "speechStart": 17.8,
+      "speechEnd": 19.85,
+      "displayIn": 17.25,
+      "displayOut": 20.17,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "We",
+          "start": 17.8,
+          "end": 18,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "We"
+        },
+        {
+          "text": "are",
+          "start": 18,
+          "end": 18.2,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "are"
+        },
+        {
+          "text": "getting",
+          "start": 18.2,
+          "end": 18.9,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "getting"
+        },
+        {
+          "text": "on",
+          "start": 18.9,
+          "end": 19,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": 0,
+            "opsz": 43,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "on"
+        },
+        {
+          "text": "that",
+          "start": 19,
+          "end": 19.4,
+          "glue": false,
+          "style": {
+            "fontSize": 51.1,
+            "weight": 530,
+            "width": 106,
+            "slant": 0,
+            "opsz": 51,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 70,
+            "pitch": 48
+          },
+          "source": "that"
+        },
+        {
+          "text": "train.",
+          "start": 19.4,
+          "end": 19.9,
+          "glue": false,
+          "style": {
+            "fontSize": 56.2,
+            "weight": 551,
+            "width": 108,
+            "slant": 0,
+            "opsz": 56,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 84,
+            "pitch": 44
+          },
+          "source": "train."
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 7.5
+    },
+    {
+      "id": "c8",
+      "label": "Jonah Pike — Not if I say we stay.",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "speaker": "Jonah Pike",
+      "color": "#17E5E5",
+      "text": "Not if I say we stay.",
+      "speechStart": 20.05,
+      "speechEnd": 22.15,
+      "displayIn": 19.5,
+      "displayOut": 22.47,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Not",
+          "start": 20.1,
+          "end": 20.5,
+          "glue": false,
+          "style": {
+            "fontSize": 38.5,
+            "weight": 676,
+            "width": 121,
+            "slant": 0,
+            "opsz": 39,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 30,
+            "pitch": 20
+          },
+          "source": "Not"
+        },
+        {
+          "text": "if",
+          "start": 20.5,
+          "end": 20.8,
+          "glue": false,
+          "style": {
+            "fontSize": 37.4,
+            "weight": 666,
+            "width": 120,
+            "slant": 0,
+            "opsz": 37,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 26,
+            "pitch": 22
+          },
+          "source": "if"
+        },
+        {
+          "text": "I",
+          "start": 20.8,
+          "end": 20.9,
+          "glue": false,
+          "style": {
+            "fontSize": 36.9,
+            "weight": 676,
+            "width": 121,
+            "slant": 0,
+            "opsz": 37,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 24,
+            "pitch": 20
+          },
+          "source": "I"
+        },
+        {
+          "text": "say",
+          "start": 20.9,
+          "end": 21.3,
+          "glue": false,
+          "style": {
+            "fontSize": 38,
+            "weight": 686,
+            "width": 122,
+            "slant": 0,
+            "opsz": 38,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 28,
+            "pitch": 18
+          },
+          "source": "say"
+        },
+        {
+          "text": "we",
+          "start": 21.3,
+          "end": 21.6,
+          "glue": false,
+          "style": {
+            "fontSize": 37.4,
+            "weight": 676,
+            "width": 121,
+            "slant": 0,
+            "opsz": 37,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 26,
+            "pitch": 20
+          },
+          "source": "we"
+        },
+        {
+          "text": "stay.",
+          "start": 21.6,
+          "end": 22.2,
+          "glue": false,
+          "style": {
+            "fontSize": 39.5,
+            "weight": 697,
+            "width": 123,
+            "slant": 0,
+            "opsz": 40,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 34,
+            "pitch": 16
+          },
+          "source": "stay."
+        }
+      ],
+      "slot": 1,
+      "edge": "bottom",
+      "pct": 16
+    },
+    {
+      "id": "c9",
+      "label": "Sound — brakes hiss, long and low",
+      "type": "sound",
+      "speakerId": null,
+      "speaker": "sound",
+      "color": "#B7C6D4",
+      "text": "[brakes hiss, long and low]",
+      "speechStart": 22.4,
+      "speechEnd": 24.15,
+      "displayIn": 21.849999999999998,
+      "displayOut": 24.47,
+      "position": "top",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "[brakes",
+          "start": 22.4,
+          "end": 22.9,
+          "glue": false,
+          "style": {
+            "fontSize": 53.3,
+            "weight": 624,
+            "width": 116,
+            "slant": -8,
+            "opsz": 53,
+            "color": "#B7C6D4",
+            "pop": 1.15,
+            "volume": 76,
+            "pitch": 30
+          },
+          "source": "[brakes"
+        },
+        {
+          "text": "hiss,",
+          "start": 22.9,
+          "end": 23.3,
+          "glue": false,
+          "style": {
+            "fontSize": 46.7,
+            "weight": 541,
+            "width": 107,
+            "slant": -8,
+            "opsz": 47,
+            "color": "#B7C6D4",
+            "pop": 1.15,
+            "volume": 58,
+            "pitch": 46
+          },
+          "source": "hiss,"
+        },
+        {
+          "text": "long",
+          "start": 23.3,
+          "end": 23.6,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 634,
+            "width": 117,
+            "slant": -8,
+            "opsz": 43,
+            "color": "#B7C6D4",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 28
+          },
+          "source": "long"
+        },
+        {
+          "text": "and",
+          "start": 23.6,
+          "end": 23.9,
+          "glue": false,
+          "style": {
+            "fontSize": 41.1,
+            "weight": 614,
+            "width": 115,
+            "slant": -8,
+            "opsz": 41,
+            "color": "#B7C6D4",
+            "pop": 1.15,
+            "volume": 40,
+            "pitch": 32
+          },
+          "source": "and"
+        },
+        {
+          "text": "low]",
+          "start": 23.9,
+          "end": 24.2,
+          "glue": false,
+          "style": {
+            "fontSize": 51.1,
+            "weight": 707,
+            "width": 124,
+            "slant": -8,
+            "opsz": 51,
+            "color": "#B7C6D4",
+            "pop": 1.15,
+            "volume": 70,
+            "pitch": 14
+          },
+          "source": "low]"
+        }
+      ],
+      "slot": 0,
+      "edge": "top",
+      "pct": 7.5
+    },
+    {
+      "id": "c10",
+      "label": "Music — low strings, uneasy",
+      "type": "music",
+      "speakerId": null,
+      "speaker": "music",
+      "color": "#E4C98A",
+      "text": "♪ [low strings, uneasy]",
+      "speechStart": 24.3,
+      "speechEnd": 27.6,
+      "displayIn": 23.75,
+      "displayOut": 27.92,
+      "position": "upper",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "♪",
+          "start": 24.3,
+          "end": 24.5,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 499,
+            "width": 103,
+            "slant": -8,
+            "opsz": 43,
+            "color": "#E4C98A",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 54
+          },
+          "source": "♪"
+        },
+        {
+          "text": "[low",
+          "start": 24.5,
+          "end": 25.1,
+          "glue": false,
+          "style": {
+            "fontSize": 42.2,
+            "weight": 718,
+            "width": 126,
+            "slant": -8,
+            "opsz": 42,
+            "color": "#E4C98A",
+            "pop": 1.15,
+            "volume": 44,
+            "pitch": 12
+          },
+          "source": "[low"
+        },
+        {
+          "text": "strings,",
+          "start": 25.1,
+          "end": 26.4,
+          "glue": false,
+          "style": {
+            "fontSize": 43.2,
+            "weight": 697,
+            "width": 123,
+            "slant": -8,
+            "opsz": 43,
+            "color": "#E4C98A",
+            "pop": 1.15,
+            "volume": 48,
+            "pitch": 16
+          },
+          "source": "strings,"
+        },
+        {
+          "text": "uneasy]",
+          "start": 26.4,
+          "end": 27.6,
+          "glue": false,
+          "style": {
+            "fontSize": 40.1,
+            "weight": 603,
+            "width": 114,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#E4C98A",
+            "pop": 1.15,
+            "volume": 36,
+            "pitch": 34
+          },
+          "source": "uneasy]"
+        }
+      ],
+      "slot": 0,
+      "edge": "top",
+      "pct": 20
+    },
+    {
+      "id": "c11",
+      "label": "Mara Ellison — Jonah.",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "speaker": "Mara Ellison",
+      "color": "#E5E517",
+      "text": "Jonah.",
+      "speechStart": 27.85,
+      "speechEnd": 28.55,
+      "displayIn": 27.3,
+      "displayOut": 28.87,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Jonah.",
+          "start": 27.9,
+          "end": 28.6,
+          "glue": false,
+          "style": {
+            "fontSize": 59.2,
+            "weight": 562,
+            "width": 109,
+            "slant": 0,
+            "opsz": 59,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 92,
+            "pitch": 42
+          },
+          "source": "Jonah."
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 7.5
+    },
+    {
+      "id": "c12",
+      "label": "Jonah Pike — Mara.",
+      "type": "dialogue",
+      "speakerId": "jonah",
+      "speaker": "Jonah Pike",
+      "color": "#17E5E5",
+      "text": "Mara.",
+      "speechStart": 28.7,
+      "speechEnd": 29.35,
+      "displayIn": 28.15,
+      "displayOut": 29.67,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Mara.",
+          "start": 28.7,
+          "end": 29.4,
+          "glue": false,
+          "style": {
+            "fontSize": 41.1,
+            "weight": 655,
+            "width": 119,
+            "slant": 0,
+            "opsz": 41,
+            "color": "#17E5E5",
+            "pop": 1.15,
+            "volume": 40,
+            "pitch": 24
+          },
+          "source": "Mara."
+        }
+      ],
+      "slot": 1,
+      "edge": "bottom",
+      "pct": 16
+    },
+    {
+      "id": "c13",
+      "label": "Mara Ellison — Don't.",
+      "type": "dialogue",
+      "speakerId": "mara",
+      "speaker": "Mara Ellison",
+      "color": "#E5E517",
+      "text": "Don't.",
+      "speechStart": 29.5,
+      "speechEnd": 30.15,
+      "displayIn": 28.95,
+      "displayOut": 30.47,
+      "position": "bottom",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "Don't.",
+          "start": 29.5,
+          "end": 30.2,
+          "glue": false,
+          "style": {
+            "fontSize": 57,
+            "weight": 572,
+            "width": 110,
+            "slant": 0,
+            "opsz": 57,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 86,
+            "pitch": 40
+          },
+          "source": "Don't."
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 7.5
+    },
+    {
+      "id": "c14",
+      "label": "Mara Ellison — hold on, hold on",
+      "type": "lyric",
+      "speakerId": "mara",
+      "speaker": "Mara Ellison",
+      "color": "#E5E517",
+      "text": "♪ hold on, hold on",
+      "speechStart": 30.5,
+      "speechEnd": 33.1,
+      "displayIn": 29.95,
+      "displayOut": 33.42,
+      "position": "lower",
+      "offscreen": false,
+      "tokens": [
+        {
+          "text": "♪",
+          "start": 30.5,
+          "end": 30.7,
+          "glue": false,
+          "style": {
+            "fontSize": 39.5,
+            "weight": 447,
+            "width": 97,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 34,
+            "pitch": 64
+          },
+          "source": "♪"
+        },
+        {
+          "text": "hold",
+          "start": 30.7,
+          "end": 31.5,
+          "glue": false,
+          "style": {
+            "fontSize": 38.5,
+            "weight": 426,
+            "width": 95,
+            "slant": -8,
+            "opsz": 39,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 30,
+            "pitch": 68
+          },
+          "source": "hold"
+        },
+        {
+          "text": "on,",
+          "start": 31.5,
+          "end": 31.9,
+          "glue": false,
+          "style": {
+            "fontSize": 39.5,
+            "weight": 447,
+            "width": 97,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 34,
+            "pitch": 64
+          },
+          "source": "on,"
+        },
+        {
+          "text": "hold",
+          "start": 31.9,
+          "end": 32.7,
+          "glue": false,
+          "style": {
+            "fontSize": 38.5,
+            "weight": 426,
+            "width": 95,
+            "slant": -8,
+            "opsz": 39,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 30,
+            "pitch": 68
+          },
+          "source": "hold"
+        },
+        {
+          "text": "on",
+          "start": 32.7,
+          "end": 33.1,
+          "glue": false,
+          "style": {
+            "fontSize": 39.5,
+            "weight": 447,
+            "width": 97,
+            "slant": -8,
+            "opsz": 40,
+            "color": "#E5E517",
+            "pop": 1.15,
+            "volume": 34,
+            "pitch": 64
+          },
+          "source": "on"
+        }
+      ],
+      "slot": 0,
+      "edge": "bottom",
+      "pct": 18
+    }
+  ],
+  "legend": [
+    {
+      "name": "Mara Ellison",
+      "role": "main",
+      "color": "#E5E517"
+    },
+    {
+      "name": "Jonah Pike",
+      "role": "main",
+      "color": "#17E5E5"
+    },
+    {
+      "name": "Inez",
+      "role": "supporting",
+      "color": "#D4B75E"
+    },
+    {
+      "name": "Station",
+      "role": "minor",
+      "color": "#BBCFDD"
+    }
+  ],
+  "engine": "1.0.0"
+}

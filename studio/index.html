@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intention Captions</title>
+  <link rel="stylesheet" href="css/studio.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap">
+  <style>
+    @font-face {
+      font-family: "Roboto Flex";
+      src: url("../fonts/RobotoFlex.ttf") format("truetype");
+      font-weight: 100 1000;
+      font-stretch: 25% 151%;
+      font-style: oblique 0deg 10deg;
+      font-display: swap;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <b>INTENTION</b>
+      <span>Caption studio</span>
+    </div>
+    <input id="title" class="project-name" aria-label="Project title" spellcheck="false">
+    <div class="top-actions">
+      <button type="button" id="btn-rules" class="btn-ghost">Design rules</button>
+      <button type="button" id="btn-settings" class="btn-ghost">Picture</button>
+      <div class="menu" id="import-menu">
+        <button type="button" class="btn" id="import-toggle">Import</button>
+        <div class="menu-pop" role="menu">
+          <button type="button" id="import-json">Project JSON<small>Editorial file from this studio</small></button>
+          <button type="button" id="import-srt">SRT or VTT<small>Timing only — assign speakers after</small></button>
+          <button type="button" id="import-csv">CSV word sheet<small>Round-trip with a spreadsheet</small></button>
+          <button type="button" id="import-media">Picture or video<small>Local preview only, not uploaded</small></button>
+        </div>
+      </div>
+      <div class="menu" id="export-menu">
+        <button type="button" class="btn-brass" id="export-toggle">Export</button>
+        <div class="menu-pop" role="menu">
+          <button type="button" id="export-jsx">After Effects project<small>Builds the comps and saves an .aep. No official file needed.</small></button>
+          <button type="button" id="export-json">Project JSON<small>Re-open here, or import from the AE panel</small></button>
+          <button type="button" id="export-srt">Reference SRT<small>Plain text. Intention data is not in SRT.</small></button>
+          <button type="button" id="export-csv">Word CSV<small>One row per word</small></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="font-banner" class="banner hidden"></div>
+  <main class="workspace">
+    <aside class="col left">
+      <div class="pane-h">Characters <span><button type="button" id="space-colors" class="btn-ghost">Space</button> <button type="button" id="add-char" class="btn">Add</button></span></div>
+      <div id="char-list"></div>
+      <div class="pane-h">Lines <button type="button" id="add-cue" class="btn">Add</button></div>
+      <div id="cue-list"></div>
+    </aside>
+    <section class="col center">
+      <div class="stage-wrap">
+        <div class="stage show-legend" id="stage">
+          <img class="plate" id="plate" alt="" src="assets/platform.jpg">
+          <video id="video" class="hidden" playsinline></video>
+          <div class="vignette" aria-hidden="true"></div>
+          <div class="safe-guide" aria-hidden="true"></div>
+          <div class="legend" id="legend"></div>
+          <div class="caption-root" id="captions" aria-hidden="true"></div>
+          <div class="legacy-root hidden" id="legacy" aria-hidden="true"></div>
+          <div class="drop-hint" id="drop-hint">Drop a picture or video</div>
+        </div>
+      </div>
+      <div class="transport">
+        <button type="button" id="play" class="btn-brass">Play</button>
+        <button type="button" id="back" class="btn" title="Back one second">−1s</button>
+        <button type="button" id="fwd" class="btn" title="Forward one second">+1s</button>
+        <span class="time" id="timecode">00:00:00:00</span>
+        <span class="spacer"></span>
+        <button type="button" id="toggle-legacy" class="btn" aria-pressed="false">Legacy captions</button>
+        <button type="button" id="toggle-safe" class="btn" aria-pressed="false">Safe</button>
+        <button type="button" id="toggle-legend" class="btn" aria-pressed="true">Key</button>
+        <button type="button" id="load-sample" class="btn-ghost">Sample</button>
+      </div>
+      <div class="note" id="note">White is read-ahead. Color names the speaker as the word is spoken. Bigger is louder. Heavy and wide is a lower voice.</div>
+      <div class="timeline-wrap" id="tl-wrap">
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+    <aside class="col right">
+      <div class="pane-h" id="inspector-title">Inspector</div>
+      <div class="inspector" id="inspector"></div>
+    </aside>
+  </main>
+
+  <input type="file" id="file-json" accept=".json,application/json" hidden>
+  <input type="file" id="file-srt" accept=".srt,.vtt,text/plain" hidden>
+  <input type="file" id="file-csv" accept=".csv,text/csv" hidden>
+  <input type="file" id="file-media" accept="video/*,image/*" hidden>
+
+  <dialog id="rules">
+    <header>
+      <h2>Design rules</h2>
+      <button type="button" class="btn-ghost" data-close>Close</button>
+    </header>
+    <div class="body">
+      <p>These are the published Caption with Intention rules, built into this studio and into an After Effects project you can save yourself. You do not need to request their project file. This is an independent implementation, not their template.</p>
+      <h3>Attribution</h3>
+      <p>Each speaker has a color. Six main colors are fixed: Yellow <code>#E5E517</code>, Blue <code>#17E5E5</code>, Red <code>#E51717</code>, Orange <code>#E57E17</code>, Green <code>#17E517</code>, Purple <code>#E517E5</code>. Space mains as far apart as the cast allows. A hero and a villain sit opposite each other. Supporting roles take the twelve hues between those mains. Minor and off-screen voices take pastels closer to white, and off-screen speech is italic.</p>
+      <h3>Synchronization</h3>
+      <p>The full line appears first in white at 90% opacity, so viewers can read ahead. As each word is spoken it shifts to the speaker color — through the word, not only at the end. The word also grows 15% and lifts, then returns. That pop is the timing mark. A word can be split into syllables when the performance breaks it that way (<code>north|bound</code>).</p>
+      <h3>Intonation</h3>
+      <p>Volume changes size, inside a fixed range: whisper 70% of baseline, conversation 100%, shout 142%. Pitch changes the Roboto Flex face: a low voice is heavier and wider, a high voice is lighter and more condensed. Sound effects are italic in brackets. Music descriptions are italic with a note mark. Sung lines keep the singer’s color and a note mark.</p>
+      <h3>After Effects</h3>
+      <p>Export → After Effects project, then in After Effects choose File → Scripts → Run Script File. The script installs the included Roboto Flex, builds a transparent caption comp and a black preview comp, and saves an .aep. Allow scripts to write files under Preferences → Scripting &amp; Expressions. After Effects 26 sets the variable-font axes directly; older versions use size, horizontal scale, and faux italic. If the font was just installed, quit After Effects and run the script once more.</p>
+    </div>
+  </dialog>
+
+  <dialog id="settings">
+    <header>
+      <h2>Picture setup</h2>
+      <button type="button" class="btn-ghost" data-close>Close</button>
+    </header>
+    <div class="body">
+      <div class="field">
+        <label for="set-preset">Frame</label>
+        <select id="set-preset"></select>
+      </div>
+      <div class="row3">
+        <div class="field"><label for="set-w">Width</label><input id="set-w" type="number" min="320" max="8192"></div>
+        <div class="field"><label for="set-h">Height</label><input id="set-h" type="number" min="320" max="8192"></div>
+        <div class="field"><label for="set-fps">fps</label>
+          <select id="set-fps">
+            <option>23.976</option>
+            <option>24</option>
+            <option>25</option>
+            <option>29.97</option>
+            <option>30</option>
+          </select>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="set-base">Baseline, % of frame height</label><input id="set-base" type="number" min="2" max="8" step="0.05"></div>
+        <div class="field"><label for="set-box">Caption box opacity</label><input id="set-box" type="number" min="0.4" max="1" step="0.05"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="set-lead">Read-ahead lead (seconds)</label><input id="set-lead" type="number" min="0" max="3" step="0.05"></div>
+        <div class="field"><label for="set-hold">Hold after speech</label><input id="set-hold" type="number" min="0" max="3" step="0.05"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="set-sync">Color sync</label>
+          <select id="set-sync">
+            <option value="within-word">Through the word</option>
+            <option value="word-snap">Whole word at onset</option>
+          </select>
+        </div>
+        <div class="field"><label class="check" for="set-pop"><input id="set-pop" type="checkbox"> 15% pop on the spoken word</label></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="set-sound">Sound color</label><input id="set-sound" type="color"></div>
+        <div class="field"><label for="set-music">Music color</label><input id="set-music" type="color"></div>
+      </div>
+      <div class="field"><label for="set-font">After Effects font PostScript name</label><input id="set-font" type="text" spellcheck="false"></div>
+      <p>Baseline type size scales with the frame, the way the system sizes type per aspect ratio. Shouts grow from that baseline; they do not replace it.</p>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
